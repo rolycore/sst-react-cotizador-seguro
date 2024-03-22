@@ -4,7 +4,6 @@ import Formulario from './components/Formulario';
 import Resumen from './components/Resumen';
 import Resultado from './components/Resultado';
 import Spinner from './components/Spinner';
-
 import styled from '@emotion/styled';
 
 const Contenedor = styled.div`
@@ -14,7 +13,7 @@ const Contenedor = styled.div`
 const ContenedorFormulario = styled.div`
   background-color: #FFF;
   padding: 3rem;
-`
+`;
 
 function App() {
 
@@ -30,7 +29,7 @@ function App() {
   const [ cargando, guardarCargando] = useState(false);
 
   // extraer datos
-  const { cotizacion, datos } = resumen;
+  const { cotizacion, datos } = resumen;
 
   return (
     <Contenedor>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-
+import shalomlogo from "../mutimedia/images/logo.jpg";
 const ContenedorHeader = styled.header`
     background-color: #26C6DA;
     padding: 10px;
@@ -19,7 +19,8 @@ const TextoHeader = styled.h1`
 const Header = ({titulo}) => {
     return ( 
         <ContenedorHeader>
-            <TextoHeader>{titulo}</TextoHeader>
+            <TextoHeader>{titulo} {/* Aquí puedes usar la imagen */}
+    <img src={shalomlogo} alt="Shalom Logo" style={{ maxWidth: "25%", height: "auto" }} /></TextoHeader>
         </ContenedorHeader>
      );
 }
